@@ -13,9 +13,10 @@ $f3->set('DEBUG', 3);
 
 //Define a default route (home page)
 $f3->route('GET /', function() {
-    echo "My Food Page";
     $view = new Template();
     echo $view->render('views/home.html');
+    include ('views/home.html');
+    echo '<img src="images/food.jpg">';
 
 });
 
