@@ -15,9 +15,6 @@ $f3->set('DEBUG', 3);
 $f3->route('GET /', function() {
     $view = new Template();
     echo $view->render('views/home.html');
-    include ('views/home.html');
-    echo '<img src="images/food.jpg">';
-
 });
 
 //Run fat free
