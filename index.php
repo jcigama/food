@@ -25,7 +25,7 @@ $f3->route('GET /breakfast', function() {
 });
 
 //Define a "lunch" route
-$f3->route('GET /breakfast', function() {
+$f3->route('GET /lunch', function() {
 //    echo "Lunch";
     $view = new Template();
     echo $view->render('views/lunch.html');
