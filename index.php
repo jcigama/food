@@ -9,13 +9,11 @@ require_once('vendor/autoload.php');
 
 //Create an instance of the Base class
 $f3 = Base::instance();
-$f3 = new Base();
 $f3->set('DEBUG', 3);
 
 //Define a default route (home page)
 $f3->route('GET /', function() {
-    $view = new Template();
-    echo $view->render('views/home.html');
+    echo "My Food Page";
 });
 
 //Run fat free
